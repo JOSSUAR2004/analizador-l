@@ -47,17 +47,17 @@ function App() {
   return (
     <Container>
       <Typography variant="h4" gutterBottom>
-        Analizador Léxico
+        ANALIZADOR
       </Typography>
       <TextareaAutosize
         value={input}
         onChange={e => setInput(e.target.value)}
         rowsMin={10}
         style={{ width: '100%', marginBottom: '20px' }}
-        placeholder="Introduce las declaraciones..."
+        placeholder="Digite por favor las declaraciones..."
       />
       <Button variant="contained" color="primary" onClick={analyze}>
-        Analizar
+        Analizar sentencia
       </Button>
       <div className="result" style={{ marginTop: '20px' }}>
         {status === 'success' && Object.entries(result).map(([type, vars]) => (
